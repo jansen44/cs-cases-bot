@@ -6,13 +6,21 @@
 
 Um bot que simula abertura de caixas de CS-GO em um canal do discord. Com ele você pode: pesquisar caixas no mercado da steam, ver conteúdo de caixas, verificar preços e simular aberturas de caixa, adicionando-as ao seu 'inventário'.
 
-**Atenção:** Esse projeto foi feito inteiramente por diversão, então otimização de código não foi a prioridade, é muito provável que eu ou qualquer um que mexa nesse código consiga otimizar sem muita dificuldade. Esse projeto foi possível apenas graças à api da equipe da [Hexa.One](https://hexa.one) e a api incrível para busca de preços no mercado da steam, e ao pessoal do [discord.js](https://discord.js.org/#/), que diminuiu bastante meu trabalho com uma biblioteca extremamente simples de usar. Sem essas duas equipes provavelmente o meu trabalho teria se extendido por algumas semanas ou até meses.
+**Atenção:** Esse projeto foi feito inteiramente por diversão, então otimização de código não foi a prioridade, é bem possível que você estranhe coisas que eu fiz nesse código, eu mesmo fico meio incomodado com algumas coisas, mas como eu fiz só pra brincar não acho que faça mal. 
+
+Esse projeto foi possível apenas graças à api da equipe da [Hexa.One](https://hexa.one) e a api incrível para busca de preços no mercado da steam, e ao pessoal do [discord.js](https://discord.js.org/#/), que diminuiu bastante meu trabalho com uma biblioteca extremamente simples de usar. Sem essas duas equipes provavelmente o meu trabalho teria se extendido por algumas semanas ou até meses.
+
+Esse bot **NÃO ABRE CAIXAS NA STEAM**, apenas simula dentro de um servidor do discord **PARA DIVERSÃO**. A única aplicação 'séria' desse bot seria para pesquisar alguns preços ou skins ou conteúdo de caixas, já que todas as informações são reais, fora isso esse bot é apenas para **DIVERSÃO**.
 
 🇺🇸
 
 A bot that simulates CSGO cases opening on a text channel. With this you can: search boxes on steam marketplace, see box contents, check prices (skins/cases) and simulated case opening, adding them to your inventory.
 
-**Disclaimer:** This project was entirely made for fun, so code optimization was not my main objective, probably anyone (including me) that tweaks this code could optimize without any difficulty. This project was only possible thanks to [Hexa.One](https://hexa.one) guys (if any of you guys are reading this, I tried paying for unlimited access but none of my payment methods were accepted, probably because I live in Brazil and I think the main payment is somewhere near Russia or something, I hope this little cache won't bother you <3, you can always contact me if any problem) and their AMAZING api for searching steam market prices/items, and [discord.js](https://discord.js.org/#/) team, which their easy library is so fun and easy to use that I had barely no trouble at all. Without their code this project could easily be extended to weeks, maybe months.
+**Disclaimer:** This project was entirely made for fun, so code optimization was not my main objective, you'll probably cringe with some stuff here in this code, I do too, but since it was made entirely for fun, I guess that's not a problem for me at all. 
+
+This project was only possible thanks to [Hexa.One](https://hexa.one) guys (if any of you guys are reading this, I tried paying for unlimited access but none of my payment methods were accepted, probably because I live in Brazil and I think the main payment is somewhere near Russia or something, I hope this little cache won't bother you <3, you can always contact me if any problem) and their AMAZING api for searching steam market prices/items, and [discord.js](https://discord.js.org/#/) team, which their easy library is so fun and easy to use that I had barely no trouble at all. Without their code this project could easily be extended to weeks, maybe months.
+
+This bot **WON'T OPEN CASES REAL CASES**, it will only simulate opening it inside a discord bot **FOR FUN**. You can use it to search skins, case contents and some average prices directly from discord, besides that, this bot is just for **FUN**.
 
 
 ### Requisitos / Requirements
@@ -26,12 +34,13 @@ A bot that simulates CSGO cases opening on a text channel. With this you can: se
 ### Discord Application
 🇧🇷
 
-Criar uma aplicação no discord é bem fácil, acessa o [link](https://discord.com/developers/docs/intro) e segue a documentação na sessão 'Bots and Apps'. Depois de criar um a aplicação, no menu da direita entre na sessão bot e adicione um bot, a sua aplicação. A única coisa que vc vai precisar é o token do seu bot. Clique em Copy e coloca em algum lugar seguro aí.
+Criar uma aplicação no discord é bem fácil, acessa o [link](https://discord.com/developers/docs/intro) e segue a documentação na sessão 'Bots and Apps'. Depois de criar um a aplicação, no menu da direita entre na sessão bot e adicione um bot, a sua aplicação. A única coisa que vc vai precisar é o token do seu bot e o id da sua aplicação. Clique em Copy e coloca em algum lugar seguro aí.
 
 🇺🇸
 
-Making a discord application is pretty easy, just follow this [tutorial](https://discord.com/developers/docs/intro) on the 'Bots and Apps' section. After creating an application, on the left menu click on 'Bot' and add a new bot. The only think you'll need it's the bot's token.
+Making a discord application is pretty easy, just follow this [tutorial](https://discord.com/developers/docs/intro) on the 'Bots and Apps' section. After creating an application, on the left menu click on 'Bot' and add a new bot. The only think you'll need it's the bot's token and your application's id.
 
+![Discord Application Id](https://i.imgur.com/1ZgIwEF.png)
 ![Discord Bot Token](https://i.imgur.com/qsW4apv.png)
 
 
@@ -63,6 +72,7 @@ After getting everything together, set your environment variables inside a .env:
 
 ```
 SERVER_PORT=8000
+CLIENT_ID=<discord application id>
 BOT_TOKEN=<discord bot token>
 
 TARGET_CHANNEL_NAME=<target text channel>

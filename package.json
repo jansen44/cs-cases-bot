@@ -1,0 +1,28 @@
+{
+  "name": "csgo-case-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore './cache/' app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jansen44/csgo-case-discord-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jansen44/csgo-case-discord-bot/issues"
+  },
+  "homepage": "https://github.com/jansen44/csgo-case-discord-bot#readme",
+  "dependencies": {
+    "cli-color": "^2.0.0",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "hexa.one": "^1.1.1",
+    "mongoose": "^5.9.12",
+    "node-fetch": "^2.6.0"
+  }
+}
