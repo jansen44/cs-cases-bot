@@ -30,6 +30,13 @@ This bot **WON'T OPEN CASES REAL CASES**, it will only simulate opening it insid
 - Discord application
 - Hexa One API Key
 
+🇧🇷
+
+Obs.: Você vai precisar de uma coleção no mongodb criada, não implementei nada direto no código para controlar isso.
+
+🇺🇸
+
+PS: You'll need to create a new mongoDB collection, I've not implemented anything to handle that directly.
 
 ### Discord Application
 🇧🇷
