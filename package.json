@@ -23,6 +23,6 @@
     "dotenv": "^8.2.0",
     "hexa.one": "^1.1.1",
     "mongoose": "^5.9.12",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
